@@ -2901,7 +2901,7 @@ section.article-section {
 
 .article-section .article-wrap {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2,auto);
   grid-gap: 30px;
   text-align: left;
   margin-top: 50px;
@@ -2909,13 +2909,18 @@ section.article-section {
 }
 
 .article-section .article-wrap article {
+  /*Start Huy Changed */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.16);
   border-radius: 5px;
+  display: grid;
+  grid-template-columns: repeat(2,300px);
   /*overflow: hidden;*/
+  /*End Huy Changed */
 }
 
 .article-section .article-wrap article img {
   width: 100%;
+  
 }
 
 .article-section .article-wrap header.entry-header {

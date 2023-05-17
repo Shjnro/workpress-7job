@@ -63,7 +63,6 @@ if ($ed_blog && ($blog_heading  || $qry->have_posts())) { ?>
                                         <button type="button" class="btn_read_more">
                                             Read More
                                         </button>
-                                    </p>
                                 </header>
                         </article>
                     <?php

@@ -949,7 +949,10 @@ a:hover {
 .page-content,
 .entry-content,
 .entry-summary {
-  margin: 1.5em 0 0;
+  /* margin: 1.5em 0 0; */
+  /*Huy Edit*/
+
+  font-size: 14px;
 }
 
 .page-links {
@@ -1371,7 +1374,9 @@ form.search-form input.search-submit:focus {
 }
 
 .page-template-default figure.post-thumbnail {
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
+  /*Huy Changed */
+  padding-left: 30px;
 }
 
 .page-template-default figure.post-thumbnail a.post-thumbnail {
@@ -2899,33 +2904,56 @@ section.article-section {
   text-align: center;
 }
 
+.read-more {
+  margin-top: 20px !important;
+  display: block!important;
+  text-decoration: none!important;
+  font-weight: bold!important;
+  color: orange!important;
+}
+
 .article-section .article-wrap {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: inline-grid;
+  grid-template-columns: repeat(2, 1fr);
   grid-gap: 30px;
-  text-align: left;
+  /* text-align: left; */
   margin-top: 50px;
   margin-bottom: 40px;
+
 }
 
 .article-section .article-wrap article {
+  /*Start Huy Changed */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.16);
+  width: 600px;
+  height: 260px;
   border-radius: 5px;
-  /*overflow: hidden;*/
+  display: inline-grid;
+  grid-template-columns: repeat(2, 300px);
+  /* overflow: hidden; */
+  align-items: center;
+  align-content: space-around;
+  /*End Huy Changed */
 }
 
 .article-section .article-wrap article img {
   width: 100%;
+
 }
 
 .article-section .article-wrap header.entry-header {
-  padding: 30px;
+  /* padding: 30px; */
+  padding-left: 30px;
+  text-align: left;
 }
 
 .article-section .article-wrap header.entry-header .entry-title {
-  margin: 10px 0 0 0;
+  margin-top: -10px;
+  padding-top: 20px;
+  display: inline-block;
   line-height: 1.5;
   font-size: 1.112em;
+  margin-bottom: -10px;
   font-weight: 700;
 }
 

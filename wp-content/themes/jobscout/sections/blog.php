@@ -49,21 +49,19 @@ if ($ed_blog && ($blog_heading  || $qry->have_posts())) { ?>
                                 </a>
                             </figure>
                             <header class="entry-header">
-                                    <!-- <div class="entry-meta">
+                                <!-- <div class="entry-meta">
                                         <?php
                                         // if( ! $hide_author ) jobscout_posted_by(); 
                                         // if( ! $hide_date ) jobscout_posted_on();
                                         ?>
                                     </div> -->
-                                    <h5 class="entry-title">
-                                        <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-                                    </h5>
-                                    <p class="entry-content">
-                                        <?php the_excerpt() ?>
-                                        <button type="button" class="btn_read_more">
-                                            Read More
-                                        </button>
-                                </header>
+                                <h5 class="entry-title">
+                                    <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                                </h5>
+                                <p class="entry-content"><?php echo (get_the_excerpt()); ?><br>
+                                    <a href="" class="read-more">Read More
+                                    </a>
+                            </header>
                         </article>
                     <?php
                     }

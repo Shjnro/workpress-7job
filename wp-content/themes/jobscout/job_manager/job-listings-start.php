@@ -15,4 +15,5 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 ?>
-<div class="job_listings">
+<!-- Yeu cau 4 -->
+<div class="job_listings row">

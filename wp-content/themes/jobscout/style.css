@@ -5555,10 +5555,9 @@ JOB LISTING PAGE
 ==========================*/
 .site-main .entry-content div.job_listings div.job_listings article {
   background: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.16);
   margin-bottom: 25px;
   border-radius: 5px;
-  padding: 30px;
+  padding: 15px;
   position: relative;
   display: flex;
   flex: 1;
@@ -8349,4 +8348,10 @@ div.job_listings .load_more_jobs {
 
 .site-content .container {
   max-width: 80%;
+}
+
+.col-6{
+  padding-top: 20px;
+
+  background: #f9f9f9;
 }

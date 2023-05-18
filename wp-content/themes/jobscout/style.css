@@ -8188,6 +8188,7 @@ RESPONSIVE STYLESHEET
 .wp-block-social-links {
   flex-wrap: wrap !important;
 }
+
 /*Yeu cau 4 */
 .company1 li.job-type-company {
   font-size: .8em;
@@ -8196,12 +8197,14 @@ RESPONSIVE STYLESHEET
   display: inline-block;
   color: rgb(0 0 0 / 72%);
   cursor: default;
+  text-align: center;
 }
 
 .bg .company1 {
   float: left;
   position: relative;
   width: 30%;
+  left: 10px;
 }
 
 .bg .company1::before {
@@ -8224,6 +8227,7 @@ RESPONSIVE STYLESHEET
   display: inline-block;
   color: rgb(0 0 0 / 72%);
   cursor: default;
+  text-align: center;
 }
 
 .bg .company-location::before {
@@ -8312,6 +8316,7 @@ RESPONSIVE STYLESHEET
   color: rgb(0 0 0 / 72%);
   text-decoration: none;
   cursor: default;
+  text-align: center;
 }
 
 .bg div {
@@ -8493,3 +8498,5 @@ section.bg-st-edit.thinh {
 
 
 /* End Css module 5 */
+=======
+>>>>>>> 2-15-Thai-YeuCau2

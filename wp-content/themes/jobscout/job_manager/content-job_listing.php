@@ -27,32 +27,31 @@ $company_name = get_post_meta(get_the_ID(), '_company_name', true);
 	<article <?php job_listing_class(); ?> data-longitude="<?php echo esc_attr($post->geolocation_lat); ?>" data-latitude="<?php echo esc_attr($post->geolocation_long); ?>">
 
 		<p>
-			<figure class="company-logo">
-				<?php the_company_logo('thumbnail'); ?>
-			</figure>
+		<figure class="company-logo">
+			<?php the_company_logo('thumbnail'); ?>
+		</figure>
 
-			<div class="job-title-wrapper">
-				<h2 class="entry-title-company">
-					<a href="<?php the_job_permalink(); ?>"><?php wpjm_the_job_title(); ?></a>
-				</h2>
+		<div class="job-title-wrapper">
+			<h2 class="entry-title-company">
+				<a href="<?php the_job_permalink(); ?>"><?php wpjm_the_job_title(); ?></a>
+			</h2>
 
-				<!-- Hien gio -->
-				<span class="date-post"><?php echo "Create: " . get_the_date('M j, Y'); ?></span>
-			
-				<div class="row bg">
-					<div class="company1">
-						<?php
-						if (get_option('job_manager_enable_types')) {
-							$types = wpjm_get_the_job_types();
-							if (!empty($types)) : foreach ($types as $jobtype) : ?>
+			<!-- Hien gio -->
+			<span class="date-post"><?php echo "Create: " . get_the_date('M j, Y'); ?></span>
+
+			<div class="row bg">
+				<div class="company1">
+					<?php
+					if (get_option('job_manager_enable_types')) {
+						$types = wpjm_get_the_job_types();
+						if (!empty($types)) : foreach ($types as $jobtype) : ?>
 								<li class="job-type-company <?php echo esc_attr(sanitize_title($jobtype->slug)); ?>"><?php echo esc_html($jobtype->name); ?></li>
-						<?php endforeach;
-							endif;
-						}
-						do_action('job_listing_meta_end');
-						?>
-					</div>
-						&emsp;
+					<?php endforeach;
+						endif;
+					}
+					do_action('job_listing_meta_end');
+					?>
+					&emsp;
 					<div class="company2">
 						<?php the_company_name('<strong>', '</strong> '); ?>
 					</div>
@@ -62,6 +61,7 @@ $company_name = get_post_meta(get_the_ID(), '_company_name', true);
 					</div>
 				</div>
 			</div>
+		</div>
 		</p>
 
 		<div class="job-description-content">

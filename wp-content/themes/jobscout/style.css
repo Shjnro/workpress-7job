@@ -2573,7 +2573,7 @@ section.top-job-section .section-title {
 .top-job-section .row div.job_listings article .company-logo {
   width: 100px;
   margin: 0;
-  background: #eeeeee;
+  border: 1px solid #e6e6e6;
 }
 
 .featured-label {
